@@ -3,7 +3,7 @@ email:              mvc1009@gmail.com
 description:        Blog of a security researcher
 author:             benjugat
 baseurl:            "/blog"
-url:                "https://benjugat.github.io/blog"
+url:                "https://benjugat.github.io"
 
 # Social Profiles
 twitter_username:   SBootstrap
