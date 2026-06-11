@@ -1,4 +1,4 @@
-remote_theme: StartBootstrap/startbootstrap-clean-blog-jekyll
+#remote_theme: StartBootstrap/startbootstrap-clean-blog-jekyll
 title:              benjugat Blog
 email:              mvc1009@gmail.com
 description:        Blog of a security researcher
