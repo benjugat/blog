@@ -1,2 +1,9 @@
 // Import Core Clean Blog SCSS
 @import "../assets/vendor/startbootstrap-clean-blog/scss/styles.scss";
+
+// Custom overrides
+.post-content {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+}
