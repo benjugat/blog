@@ -1,10 +1,10 @@
 #remote_theme: StartBootstrap/startbootstrap-clean-blog-jekyll
 title:              benjugat Blog
 email:              mvc1009@gmail.com
-description:        Blog of a security researcher
+description:        Blog for a security researcher
 author:             benjugat
 baseurl:            "/blog"
-url:                "https://benjugat.github.io/blog"
+#url:                "https://benjugat.github.io/blog"
 
 
 # Social Profiles
