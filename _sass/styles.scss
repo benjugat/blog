@@ -6,4 +6,11 @@
     text-align: justify;
     text-justify: inter-word;
     hyphens: auto;
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 1.5rem auto;
+    }
 }
