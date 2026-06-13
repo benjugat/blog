@@ -33,6 +33,6 @@ And we log in, as we can see in the server response, it does not set us any new 
 
 ![Session Fixation](/blog/img/posts/session-fixation-03.png)
 
-Finally we can see that we have been correctly logged in with the user "benjugat" and the cookie has not been modified or changed by a new one, and it keeps the initial cookie "POC-COOKIE". The server has changed it from unauthenticated to authenticated context.
+Finally we can see that we have been correctly logged in with the user `benjugat` and the cookie has not been modified or changed by a new one, and it keeps the initial cookie `POC-COOKIE`. The server has changed it from unauthenticated to authenticated context.
 
 ![Session Fixation](/blog/img/posts/session-fixation-04.png)
