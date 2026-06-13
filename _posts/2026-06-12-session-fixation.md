@@ -17,3 +17,22 @@ In a secure implementation, when a user authenticates, the application should ge
 These vulnerabilities often go unnoticed when one relies solely on the absence of public CVEs or advisories. However, the real security of an application also depends on reviewing its logic flows, especially in authentication and session management.
 
 This finding shows that an internal pentest is not only useful for confirming known vulnerabilities, but also for identifying logic flaws that do not always appear in public sources.
+
+
+# PoC
+
+As we can see the initial cookie `OSTSESSID` with the value of `POC-COOKIE` is a "Guest User" context cookie, i.e. not authenticated.
+
+![Session Fixation](/blog/img/posts/session-fixation-01.png)
+
+We  access  the login panel:
+
+![Session Fixation](/blog/img/posts/session-fixation-02.png)
+
+And we log in, as we can see in the server response, it does not set us any new cookie configured to the authenticated context.
+
+![Session Fixation](/blog/img/posts/session-fixation-03.png)
+
+Finally we can see that we have been correctly logged in with the user "benjugat" and the cookie has not been modified or changed by a new one, and it keeps the initial cookie "POC-COOKIE". The server has changed it from unauthenticated to authenticated context.
+
+![Session Fixation](/blog/img/posts/session-fixation-04.png)
