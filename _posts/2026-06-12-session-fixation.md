@@ -21,7 +21,7 @@ This finding shows that an internal pentest is not only useful for confirming kn
 
 # PoC
 
-As we can see the initial cookie `OSTSESSID` with the value of `POC-COOKIE` is a "Guest User" context cookie, i.e. not authenticated.
+As we can see the initial cookie `OSTSESSID` with the value of `POC-COOKIE` is a `Guest User` context cookie, i.e. not authenticated.
 
 ![Session Fixation](/blog/img/posts/session-fixation-01.png)
 
