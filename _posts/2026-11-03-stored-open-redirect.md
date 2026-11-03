@@ -2,7 +2,7 @@
 layout: post
 title: "Stored Open Redirect in a File Download Workflow (Bug Bounty)"
 subtitle: "A finding during a bugbounty journey"
-date: 2026-11-3 09:30:00 +0000
+date: 2026-11-03 09:30:00 +0000
 background: '/img/posts/02.jpg'
 ---
 
