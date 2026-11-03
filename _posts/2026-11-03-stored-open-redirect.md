@@ -16,7 +16,7 @@ When publishing content, the application submitted metadata about the downloadab
 
 One of the parameters included in the request was similar to the following:
 
-```
+```json
 {
   "modelUrl": "https://cdn.example.com/files/model.3mf"
 }
@@ -30,7 +30,7 @@ While testing the publishing workflow, I noticed that this parameter could be mo
 
 For example:
 
-```
+```json
 {
   "modelUrl": "https://attacker.example/payload"
 }
@@ -52,7 +52,7 @@ While submitting the publication form, I intercepted the API request responsible
 
 A simplified version of the request looked like this:
 
-```
+```bash
 PUT /api/v1/content/draft/<ID> HTTP/2
 Host: target.example
 Content-Type: application/json
@@ -60,7 +60,7 @@ Content-Type: application/json
 
 Within the JSON body, the application included the file location:
 
-```
+```json
 {
   "modelUrl": "https://legitimate-cdn.example/file"
 }
@@ -68,7 +68,7 @@ Within the JSON body, the application included the file location:
 
 I replaced this value with a server under my control:
 
-```
+```json
 {
   "modelUrl": "https://attacker.example/file"
 }
@@ -86,7 +86,7 @@ Instead of retrieving a file from the expected infrastructure, the application's
 
 Conceptually, the flow looked like this:
 
-```
+```bash
 Victim
   |
   | Clicks "Download"
@@ -99,4 +99,3 @@ https://attacker.example/file
 ```
 
 From the victim's perspective, the interaction originated entirely from the legitimate application's download interface.
-
