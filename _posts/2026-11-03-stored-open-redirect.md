@@ -3,7 +3,7 @@ layout: post
 title: "Stored Open Redirect in a File Download Workflow (Bug Bounty)"
 subtitle: "A finding during a bugbounty journey"
 date: 2026-11-03 09:30:00 +0000
-background: '/img/posts/02.jpg'
+background: '/img/posts/05.jpg'
 ---
 
 During a recent bug bounty assessment, I found a stored open redirect vulnerability affecting the file download workflow of a platform that allows users to publish and distribute digital content.
@@ -42,7 +42,7 @@ More importantly, the URL was persisted by the application.
 
 This transformed what could otherwise have been a simple open redirect into a stored open redirect affecting other users interacting with the published content.
 
-Reproduction
+# Reproduction
 
 The exploitation flow was straightforward.
 
