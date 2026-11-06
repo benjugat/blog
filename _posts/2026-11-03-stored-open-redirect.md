@@ -10,7 +10,7 @@ During a recent bug bounty assessment, I found a stored open redirect vulnerabil
 
 The issue was particularly interesting because the malicious URL was not directly exposed to the victim. Instead, it was stored as part of the published content and later used by the application's backend when another user initiated a download.
 
-Vulnerability Overview
+# Vulnerability Overview
 
 When publishing content, the application submitted metadata about the downloadable files to an API endpoint.
 
